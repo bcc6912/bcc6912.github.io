@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/b0ed7de253.js" crossorigin="anonymous"></script>
+</head>
+<body class="has-background-grey">
+
+    <!-- Navbar -->
+    <nav class="navbar is-black is-fixed-top py-1">
+
+        <div class="navbar-brand">
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu ml-5 has-text-weight-bold py-2">
+            <div class="navbar-start">
+                <a class="navbar-item has-background-grey has-text-black mr-2" href="index.html">Home</a>
+            
+                <a class="navbar-item has-background-grey has-text-black mr-2" href="index.html#info">About Me</a>
+            
+                <a class="navbar-item has-background-grey has-text-black mr-2" href="index.html#works">Works</a>
+            
+                <a class="navbar-item has-background-grey has-text-black mr-2" href="index.html#resume">Resume</a>
+            </div> <!-- end navbar-start -->
+        </div>
+
+        <div class="navbar-menu has-text-weight-bold has-text-centered is-hidden-desktop has-background-black py-2" id="nav-links">
+            <div class="navbar-start">
+                <a class="navbar-item has-background-grey has-text-black my-2" href="index.html">Home</a>
+            
+                <a class="navbar-item has-background-grey has-text-black my-2" href="index.html#info">About Me</a>
+            
+                <a class="navbar-item has-background-grey has-text-black my-2" href="index.html#works">Works</a>
+            
+                <a class="navbar-item has-background-grey has-text-black my-2" href="index.html#resume">Resume</a>
+            </div> <!-- end navbar-start -->
+        </div>
+    </nav>
+
+    <header class="has-text-centered pt-6">
+        <h1 class="is-size-1 has-text-weight-bold has-text-black title">Brian Corpus</h1>
+        <h2 class="is-size-2 is-italic has-text-black subtitle">Creating new worlds with the click of a keyboard</h2>
+    </header>
+
+    <main class="pt-6">
+        <section class="columns is-vcentered is-centered is-variable is-4 my-4 mx-5" id="info">
+
+            <!-- Portrait -->
+            <div class="column is-two-fifths py-2 px-3" id ="infoImg">
+                <figure class="image is-square">
+                    <img class="is-rounded" src="images/portrait.jpg" alt="portrait">
+                </figure>
+            </div>
+
+            <!-- About Me -->
+            <div class="column is-two-fifths has-text-black has-background-grey-light" id="writtenInfo">
+                <h3 class="subtitle is-3 has-text-weight-bold is-underlined has-text-black">About Me</h3>
+                    <p class="is-size-5 mb-3">
+                        I am an aspiring game developer from New York. I enjoy solving problems and making sure things work the way they are supposed to. When I'm not coding, I'll be playing video games and spending time with my friends. I am currently majoring in Game Design and Development at RIT while also working on a minor in Computer Science.
+                    </p>
+                    <dl>
+                        <dt class="is-size-5 has-text-weight-bold has-text-black">Programming Languages</dt>
+                        <dd class="is-size-5">- C++</dd>
+                        <dd class="is-size-5">- C#</dd>
+                        <dd class="is-size-5">- JavaScript</dd>
+                        <dd class="is-size-5">- HTML/CSS</dd>
+                        <dd class="is-size-5">- Java</dd>
+                    </dl>
+                    <dl>
+                        <dt class="is-size-5 has-text-weight-bold has-text-black">Contact Information</dt>
+                        <dd class="is-size-5"><i class="fas fa-envelope-open-text"></i> bcc6912@rit.edu</dd>
+                        <dd class="is-size-5"><i class="fas fa-phone"></i> 845-596-5920</dd>
+                        <dd class="is-size-5"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/brian-corpus/">My LinkedIn Page</a></dd>
+                    </dl>
+            </div>
+        </section>
+
+        <!-- Works -->
+        <section class="columns is-centered is-variable is-6 is-multiline has-background-grey-light my-4 mx-5 py-3" id="works">
+            <div class="column is-full has-text-centered my-4" id="worksTitle">
+                <h2 class="title is-size-1 has-text-weight-bold has-text-black">Works</h2>
+            </div>
+            <div class="column is-one-fourth" id="project1">
+                <div class="columns is-centered is-multiline">
+                    <h3 class="subtitle is-3 has-text-centered has-text-weight-bold has-text-black my-2">Amateur Rhythm Game</h3>
+                    <div class="box has-background-grey-darker">
+                        <a href="https://bcc6912.itch.io/casual-game-dev-project-team-two"><img src="images/thumbnailARG.png" alt="project1"></a>
+                    </div>
+                    <div class="box has-background-grey-lighter">
+                        <p id="project1Info">Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!
+                            <br><br>
+                            This was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations.
+                            <br><br>
+                            Platforms: Windows
+                            <br><br>
+                            <i>Created in Jan. 2022</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-fourth" id="project2">
+                <div class="columns is-centered is-multiline">
+                    <h3 class="subtitle is-3 has-text-centered has-text-weight-bold has-text-black my-2">Matching Mischief</h3>
+                    <div class="box has-background-grey-darker">
+                        <a href="https://people.rit.edu/bcc6912/235/project3/"><img src="images/thumbnailMM.png" alt="project2"></a>
+                    </div>
+                    <div class="box has-background-grey-lighter">
+                        <p id="project2Info">Mathching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!
+                            <br><br>
+                            This game relies on the use of JavaScript, BrowserDOM and CSS animations.
+                            <br><br>
+                            Platforms: Desktop
+                            <br><br>
+                            <i>Created in Nov. 2020</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-fourth" id="project3">
+                <div class="columns is-centered is-multiline">
+                    <h3 class="subtitle is-3 has-text-centered has-text-weight-bold has-text-black my-2">Forbidden</h3>
+                    <div class="box has-background-grey-darker">
+                        <a href="index.html#works"><img src="images/thumbnailF.png" alt="project3"></a>
+                    </div>
+                    <div class="box has-background-grey-lighter">
+                        <p id="project3Info">Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!
+                            <br><br>
+                            This game was created in Unity and utilizes vector transformations and coroutines.
+                            <br><br>
+                            Platforms: Windows
+                            <br><br>
+                            <i>Created in Sept. 2021</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section class="columns has-text-centered is-centered is-variable is-6 is-multiline has-background-grey-light my-4 mx-5 py-3" id="resume">
+            <div class="column is-full has-text-centered my-4" id="resumeTitle">
+                <h2 class="title is-size-1 has-text-weight-bold has-text-black">Resume</h2>
+            </div>
+            <div class="column is-three-fifths">
+                <a href="images/resume.pdf"><img src="images/resume.png" alt="resume"></a>
+            </div>
+            <div class="column is-full">
+                <a class="has-text-weight-bold is-size-4" id="resume-text" href="images/resume.pdf">View Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="has-background-black has-text-centered has-text-weight-bold is-size-4 py-6">
+        <a class="has-text-white" href="index.html">Back to the top</a>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
