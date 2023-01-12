@@ -1,0 +1,26 @@
+{
+    "b7439a21": {
+        "title": "Amateur Rhythm Game",
+        "date": "Jan. 2022",
+        "engine": "Unity, Wwise",
+        "platforms": "Windows",
+        "image": "images/thumbnailARG.png",
+        "description": "Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!\n\nThis was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations."
+    },
+    "1d9cb74b": {
+        "title": "Matching Mischief",
+        "date": "Nov. 2020",
+        "engine": "HTML/CSS, JavaScript",
+        "platforms": "Desktop",
+        "image": "images/thumbnailMM.png",
+        "description": "Mathching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!\n\nThis game relies on the use of JavaScript, BrowserDOM and CSS animations."
+    },
+    "8e2736ce": {
+        "title": "Forbidden",
+        "date": "Sept. 2021",
+        "engine": "Unity",
+        "platforms": "Windows",
+        "image": "images/thumbnailFF.png",
+        "description": "Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!\n\nThis game was created in Unity and utilizes vector transformations and coroutines."
+    }
+}

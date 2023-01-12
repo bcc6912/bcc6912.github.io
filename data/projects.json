@@ -1,0 +1,79 @@
+{
+    "works": [
+        {
+            "name": "Amateur Rhythm Game",
+            "created": "Jan. 2022",
+            "engine": "Unity, Wwise",
+            "platforms": "Windows",
+            "image": "./media/thumbnailARG.png",
+            "date": "2022-01",
+            "link": "https://bcc6912.itch.io/casual-game-dev-project-team-two",
+            "linkname": "https://bcc6912.itch.io/casual-game-dev-project-team-two",
+            "description": ["Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!", "This was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations."]
+        },
+        {
+            "name": "Matching Mischief",
+            "created": "Nov. 2020",
+            "engine": "HTML/CSS, JavaScript",
+            "platforms": "Desktop",
+            "image": "./media/thumbnailMM.png",
+            "date": "2020-11",
+            "link": "https://people.rit.edu/bcc6912/235/project3/",
+            "linkname": "https://people.rit.edu/bcc6912/235/project3/",
+            "description": ["Mathching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!", "This game relies on the use of JavaScript, BrowserDOM and CSS animations."]
+        },
+        {
+            "name": "Forbidden",
+            "created": "Sept. 2021",
+            "engine": "Unity",
+            "platforms": "Windows",
+            "image": "./media/thumbnailF.png",
+            "date": "2021-09",
+            "link": "https://youtu.be/FZp6MLFBqAY",
+            "linkname": "https://youtu.be/FZp6MLFBqAY",
+            "description": ["Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!", "This game was created in Unity and utilizes vector transformations and coroutines."]
+        },
+        {
+            "name": "Catacomb Cadaver",
+            "created": "Sept. 2020",
+            "engine": "Unity",
+            "platforms": "Windows",
+            "image": "./media/thumbnailCC.png",
+            "date": "2020-09",
+            "description": ["Catacomb Cadaver is a luck-based decision-making game. The player chooses different paths to choose from based on their risks and rewards in an attempt to reach the treasure at the end!", "This game was created in Unity and utilizes randomization, JSON parsing, and C# scripting."]
+        },
+        {
+            "name": "Portal 2 Level",
+            "created": "Sept. 2022",
+            "engine": "Portal 2 Level Editor",
+            "platforms": "Windows",
+            "image": "./media/thumbnailP2.png",
+            "date": "2022-09",
+            "link": "./media/Portal2Postmortem.pdf",
+            "linkname": "Portal2Postmortem.pdf",
+            "description": ["This was a Portal 2 level I made for my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of how to teach players new mechanics."]
+        },
+        {
+            "name": "FPS Level",
+            "created": "Nov. 2022",
+            "engine": "Valve Hammer Editor",
+            "platforms": "Windows",
+            "image": "./media/thumbnailHL2.png",
+            "date": "2022-11",
+            "link": "./media/FPSLevelPostmortem.pdf",
+            "linkname": "FPSLevelPostmortem.pdf",
+            "description": ["This was a Half-Life 2 level I made for my FPS level project in my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of pacing and flow."]
+        },
+        {
+            "name": "BattleBlock Theater Level",
+            "created": "Aug. 2022",
+            "engine": "BBT Level Editor",
+            "platforms": "Windows",
+            "image": "./media/thumbnailBBT.png",
+            "date": "2022-08",
+            "link": "./media/BattleBlockTheaterPostmortem.pdf",
+            "linkname": "BattleBlockTheaterPostmortem.pdf",
+            "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was have an understanding of how a 2D platformer level is put together."]
+        }
+    ]
+}
