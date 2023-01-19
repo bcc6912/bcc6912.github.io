@@ -73,7 +73,18 @@
             "date": "2022-08",
             "link": "./media/BattleBlockTheaterPostmortem.pdf",
             "linkname": "BattleBlockTheaterPostmortem.pdf",
-            "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was have an understanding of how a 2D platformer level is put together."]
+            "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was to have an understanding of how a 2D platformer level is put together."]
+        },
+        {
+            "name": "Genetic Algorithm AI",
+            "created": "Nov. 2022",
+            "engine": "Unity",
+            "platforms": "Windows",
+            "image": "./media/thumbnailGA.png",
+            "date": "2022-11",
+            "link": "./media/GeneticAlgorithm.pdf",
+            "linkname": "GeneticAlgorithm.pdf",
+            "description": ["This was a Genetic Algorithm I developed for my final project in my AI for Game Environments class, IGME 560."]
         }
     ]
 }
