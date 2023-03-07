@@ -39,10 +39,13 @@ ul {
         </div>
 
         <div class="column">
-            <div class="card-image">
+            <div id="card-image" class="card-image">
                 <figure class="image is-1by1">
                     <img id="thumbnail" src="./media/placeholderImage.png" alt="Placeholder image">
                 </figure>
+            </div>
+            <div id="card-video">
+                <iframe id="video" height="500px" width="500px" src=""></iframe>
             </div>
         </div>
     </div>
@@ -99,6 +102,7 @@ class WorksFullInfo extends HTMLElement {
         this.thumbnail = this.shadowRoot.querySelector("#thumbnail");
         this.description = this.shadowRoot.querySelector("#description");
         this.link = this.shadowRoot.querySelector("#link");
+        this.video = this.shadowRoot.querySelector("#video");
 
         this._object = null;
         this._createdDate = null;
@@ -266,12 +270,23 @@ class WorksFullInfo extends HTMLElement {
         const thumbnail = this.getAttribute('data-thumbnail') ? this.getAttribute('data-thumbnail') : "./media/placeholderImage.png";
         const link = this.getAttribute('data-link') ? this.getAttribute('data-link') : "https://bcc6912.github.io/";
         const linkName = this.getAttribute('data-linkname') ? this.getAttribute('data-linkname') : "no link";
+        const video = this.getAttribute('data-video') ? this.getAttribute('data-video') : "";
 
         this.name.innerHTML = `${name}`;
         this.date.innerHTML = `<i>Created in ${date}</i>`;
         this.engine.innerHTML = `Tools: ${engine}`;
         this.platforms.innerHTML = `Platforms: ${platforms}`;
         this.thumbnail.src = `${thumbnail}`;
+
+        if ((thumbnail == "./media/placeholderImage.png" && video != "") || (thumbnail != "./media/placeholderImage.png" && video != ""))
+        {
+            this.shadowRoot.querySelector("#card-image").classList.add('is-hidden');
+            this.video.src = `${video}`;
+        } else {
+            this.shadowRoot.querySelector("#video").height = "0";
+            this.shadowRoot.querySelector("#video").width = "0";
+            this.shadowRoot.querySelector("#card-video").classList.add('is-hidden');
+        }
 
         this.description.innerHTML = `${this._descriptions}`;
 

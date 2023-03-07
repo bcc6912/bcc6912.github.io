@@ -8,7 +8,7 @@
             "image": "./media/thumbnailARG.png",
             "date": "2022-01",
             "link": "https://bcc6912.itch.io/casual-game-dev-project-team-two",
-            "linkname": "https://bcc6912.itch.io/casual-game-dev-project-team-two",
+            "linkname": "Game Link",
             "description": ["Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!", "This was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations."]
         },
         {
@@ -19,7 +19,7 @@
             "image": "./media/thumbnailMM.png",
             "date": "2020-11",
             "link": "https://people.rit.edu/bcc6912/235/project3/",
-            "linkname": "https://people.rit.edu/bcc6912/235/project3/",
+            "linkname": "Game Link",
             "description": ["Mathching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!", "This game relies on the use of JavaScript, BrowserDOM and CSS animations."]
         },
         {
@@ -30,7 +30,7 @@
             "image": "./media/thumbnailF.png",
             "date": "2021-09",
             "link": "https://youtu.be/FZp6MLFBqAY",
-            "linkname": "https://youtu.be/FZp6MLFBqAY",
+            "linkname": "Video Postmortem and Demo",
             "description": ["Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!", "This game was created in Unity and utilizes vector transformations and coroutines."]
         },
         {
@@ -50,7 +50,7 @@
             "image": "./media/thumbnailP2.png",
             "date": "2022-09",
             "link": "./media/Portal2Postmortem.pdf",
-            "linkname": "Portal2Postmortem.pdf",
+            "linkname": "Project Postmortem Documentation",
             "description": ["This was a Portal 2 level I made for my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of how to teach players new mechanics."]
         },
         {
@@ -61,8 +61,9 @@
             "image": "./media/thumbnailHL2.png",
             "date": "2022-11",
             "link": "./media/FPSLevelPostmortem.pdf",
-            "linkname": "FPSLevelPostmortem.pdf",
-            "description": ["This was a Half-Life 2 level I made for my FPS level project in my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of pacing and flow."]
+            "linkname": "Project Postmortem Documentation",
+            "description": ["This was a Half-Life 2 level I made for my FPS level project in my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of pacing and flow."],
+            "video": "https://www.youtube.com/embed/9DQITWrTIts"
         },
         {
             "name": "BattleBlock Theater Level",
@@ -72,7 +73,7 @@
             "image": "./media/thumbnailBBT.png",
             "date": "2022-08",
             "link": "./media/BattleBlockTheaterPostmortem.pdf",
-            "linkname": "BattleBlockTheaterPostmortem.pdf",
+            "linkname": "Project Postmortem Documentation",
             "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was to have an understanding of how a 2D platformer level is put together."]
         },
         {
@@ -83,7 +84,7 @@
             "image": "./media/thumbnailGA.png",
             "date": "2022-11",
             "link": "./media/GeneticAlgorithm.pdf",
-            "linkname": "GeneticAlgorithm.pdf",
+            "linkname": "Presentation PDF",
             "description": ["This was a Genetic Algorithm I developed for my final project in my AI for Game Environments class, IGME 560."]
         }
     ]

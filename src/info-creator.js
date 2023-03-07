@@ -62,6 +62,7 @@ const showFullInfo = obj => {
     fullInfo.dataset.description = obj.description ?? "no description";
     fullInfo.dataset.link = obj.link ?? "https://bcc6912.github.io/";
     fullInfo.dataset.linkname = obj.linkname ?? "No Link";
+    fullInfo.dataset.video = obj.video ?? "";
 
     let descriptionString = "";
     for (let d of obj.description) {
