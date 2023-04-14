@@ -71,6 +71,10 @@ function loadProjects(json) {
         project1Info.innerHTML = description1String;
         project1Thumbnail.src = `${project1.image}`;
         project1Link.href = `${project1.link}`;
+        if (project1.link == undefined)
+        {
+            project1Link.href = 'index.html#works';
+        }
 
         const project2 = sortedProjects[1];
         project2Name.innerHTML = project2.name;
@@ -84,6 +88,10 @@ function loadProjects(json) {
         project2Info.innerHTML = description2String;
         project2Thumbnail.src = `${project2.image}`;
         project2Link.href = `${project2.link}`;
+        if (project2.link == undefined)
+        {
+            project2Link.href = 'index.html#works';
+        }
 
         const project3 = sortedProjects[2];
         project3Name.innerHTML = project3.name;
@@ -97,6 +105,10 @@ function loadProjects(json) {
         project3Info.innerHTML = description3String;
         project3Thumbnail.src = `${project3.image}`;
         project3Link.href = `${project3.link}`;
+        if (project3.link == undefined)
+        {
+            project3Link.href = 'index.html#works';
+        }
     }
 
     /*

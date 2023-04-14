@@ -60,7 +60,7 @@ const showFullInfo = obj => {
     fullInfo.object = obj;
     fullInfo.createdDate = obj.date ?? "9999-99";
     fullInfo.dataset.description = obj.description ?? "no description";
-    fullInfo.dataset.link = obj.link ?? "https://bcc6912.github.io/";
+    fullInfo.dataset.link = obj.link ?? "no link";
     fullInfo.dataset.linkname = obj.linkname ?? "No Link";
     fullInfo.dataset.video = obj.video ?? "";
 

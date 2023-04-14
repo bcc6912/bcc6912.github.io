@@ -268,8 +268,8 @@ class WorksFullInfo extends HTMLElement {
         const engine = this.getAttribute('data-engine') ? this.getAttribute('data-engine') : "none";
         const platforms = this.getAttribute('data-platforms') ? this.getAttribute('data-platforms') : "none";
         const thumbnail = this.getAttribute('data-thumbnail') ? this.getAttribute('data-thumbnail') : "./media/placeholderImage.png";
-        const link = this.getAttribute('data-link') ? this.getAttribute('data-link') : "https://bcc6912.github.io/";
-        const linkName = this.getAttribute('data-linkname') ? this.getAttribute('data-linkname') : "no link";
+        const link = this.getAttribute('data-link') ? this.getAttribute('data-link') : "no link";
+        const linkName = this.getAttribute('data-linkname') ? this.getAttribute('data-linkname') : "No Link";
         const video = this.getAttribute('data-video') ? this.getAttribute('data-video') : "";
 
         this.name.innerHTML = `${name}`;
@@ -290,10 +290,10 @@ class WorksFullInfo extends HTMLElement {
 
         this.description.innerHTML = `${this._descriptions}`;
 
-        if (link != 'https://bcc6912.github.io/') {
+        if (link != "no link") {
             this.link.innerHTML = `Link: <a href="${link}">${linkName}</a>`;
         } else {
-            this.link.innerHTML = `Link: No Link`;
+            this.link.innerHTML = `Link: ${linkName}`;
         }
 
         /*

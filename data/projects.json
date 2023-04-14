@@ -86,6 +86,16 @@
             "link": "./media/GeneticAlgorithm.pdf",
             "linkname": "Presentation PDF",
             "description": ["This was a Genetic Algorithm I developed for my final project in my AI for Game Environments class, IGME 560."]
+        },
+        {
+            "name": "Mineshafted",
+            "created": "Jan. 2023",
+            "engine": "Garden of Eden Creation Kit (G.E.C.K.)",
+            "platforms": "Windows",
+            "image": "./media/placeholderImage.png",
+            "date": "2023-01",
+            "linkname": "Link Pending",
+            "description": ["Mineshafted is a mod in Fallout: New Vegas that I developed alongside five other classmates for my Undergraduate Seminar class, IGME 590.03."]
         }
     ]
 }
