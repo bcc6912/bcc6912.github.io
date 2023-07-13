@@ -92,10 +92,11 @@
             "created": "Jan. 2023",
             "engine": "Garden of Eden Creation Kit (G.E.C.K.)",
             "platforms": "Windows",
-            "image": "./media/placeholderImage.png",
+            "image": "./media/thumbnailMS.png",
             "date": "2023-01",
-            "linkname": "Link Pending",
-            "description": ["Mineshafted is a mod in Fallout: New Vegas that I developed alongside five other classmates for my Undergraduate Seminar class, IGME 590.03."]
+            "link": "https://www.nexusmods.com/newvegas/mods/80735",
+            "linkname": "Nexus Page",
+            "description": ["Mineshafted is a mod in Fallout: New Vegas that I developed alongside five other classmates for my Undergraduate Seminar class, IGME 590.03.", "My main focus on this project was creating custom scripts and version control."]
         }
     ]
 }
