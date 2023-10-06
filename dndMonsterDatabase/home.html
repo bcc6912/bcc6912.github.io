@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Monster Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cfc37c984.js" crossorigin="anonymous"></script>
+    <script src="src/home.js" type="module"></script>
+</head>
+<body>
+    <p1-navlist data-active="home"></p1-navlist>
+
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-hidden-desktop py-1 px-3">
+        <div class="navbar-brand ">
+            <span class="icon my-auto mx-2">
+                <i class="fa-solid fa-dice-d20 fa-xl"></i>
+            </span>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    
+        <div class="navbar-menu py-2" id="nav-links">
+            <div class="navbar-start">
+                <ul>
+                    <li><a class="navbar-item">Home</a></li>
+                    <li><a class="navbar-item" href="app.html">App</a></li>
+                    <li><a class="navbar-item" href="favorites.html">Favorites</a></li>
+                    <li><a class="navbar-item" href="community.html">Community</a></li>
+                    <li><a class="navbar-item" href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p1-header>
+        <span slot="page-title">D&D Monster Guide</span>
+        <span slot="page-description">This site allows you to search for monsters within 5th Edition Dungeons and Dragons. If you find any of them interesting, you can favorite them and quickly reference them in your next campaign!</span>
+    </p1-header>
+
+    <div class="container mx-4 my-3">
+        <img src="images/Monster_Beholder.jpg" alt="fantasy-monster">
+    </div>
+
+    <p1-footer><span slot="this-page">Home</span></p1-footer>
+</body>
+</html>

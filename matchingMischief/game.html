@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Matching Mischief</title>
+  <link rel="stylesheet" href="css/stylesheet.css" />
+  <script src="js/classes.js"></script>
+  <script src="js/game.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Matching Mischief</h1>
+  </header>
+  <p id="results">Defeat the enemy wizard!</p>
+  <section id="menu">
+    <h2><u>How to Play</u></h2>
+    <ul>
+      <li>Defeat your opponent by matching the right cards!</li>
+      <li>Click on a card to reveal what it is!</li>
+      <li>Every time a match is made, the board gets shuffled!</li>
+      <li>Different cards do different things! Look at the key below for more info!</li>
+    </ul>
+    <button id="start">Begin</button>
+  </section>
+  <section id="game">
+    <p id="playerHealth">Your HP: 100</p>
+    <section id="pBoard">
+        <div id="pCards">
+          <div class="card">
+            <div class="face front"></div>
+            <div class="face back"></div>
+          </div> <!-- .card -->
+        </div> <!-- #cards -->
+      </section> <!-- #game -->
+      
+      <p id="cpuHealth">Enemy HP: 100</p>
+      <section id="cBoard">
+          <div id="cCards">
+              <div class="card">
+                <div class="face front"></div>
+                <div class ="face back"></div>
+              </div>
+          </div>
+      </section>
+  </section>
+  <button id="playAgain">Play Again</button>
+  <h2>Key</h2>
+  <section id="key">
+    <div id="damage">
+      <img class="icon" src="images/sword.png" alt="sword">
+      <img class="icon" src="images/poisonPotion.png" alt="poison potion">
+      <img class="icon" src="images/bomb.png" alt="bomb">
+      <img class=icon id="fireball" src="images/fireball.png" alt="fireball">
+      <img class="icon" src="images/storm.png" alt="storm cloud">
+      <img class=icon src="images/dragon.png" alt="dragon">
+    </div>
+    <div id="health">
+      <img class=icon src="images/heart.png" alt="heart">
+      <img class="icon" src="images/healthPotion.png" alt="health potion">
+      <img class="icon" src="images/chicken.png" alt="chicken leg">
+    </div>
+    <img class="icon" id="matcher" src="images/matcher.png" alt="glowing crystal">
+    <img class="icon" id="sight" src="images/sight.png" alt="glowing eye">
+    <img class="icon" id="double" src="images/DoubleCard.png" alt="2x in rainbow circle">
+    <p id="dmg">DEALS 20 DAMAGE</p>
+    <p id="heal">HEALS 10 HP</p>
+    <p id="mtch">MATCHES WITH ANY CARD</p>
+    <p id="sght">HOVER OVER A CARD TO SEE WHAT IT IS</p>
+    <p id="dbl">DOUBLES VALUE OF NEXT MATCH</p>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+</html>

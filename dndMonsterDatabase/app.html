@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Monster Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cfc37c984.js" crossorigin="anonymous"></script>
+    <script src="src/app.js" type="module"></script>
+</head>
+<body>
+    <p1-navlist data-active="app"></p1-navlist>
+
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-hidden-desktop py-1 px-3">
+        <div class="navbar-brand ">
+            <span class="icon my-auto mx-2">
+                <i class="fa-solid fa-dice-d20 fa-xl"></i>
+            </span>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    
+        <div class="navbar-menu py-2" id="nav-links">
+            <div class="navbar-start">
+                <ul>
+                    <li><a class="navbar-item" href="home.html">Home</a></li>
+                    <li><a class="navbar-item">App</a></li>
+                    <li><a class="navbar-item" href="favorites.html">Favorites</a></li>
+                    <li><a class="navbar-item" href="community.html">Community</a></li>
+                    <li><a class="navbar-item" href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p1-header>
+        <span slot="page-title">D&D Monster Guide App</span>
+        <span slot="page-description">Use the search bar or filter options to find any monster within 5th Edition Dungeons and Dragons! Press the Search button to apply filters.</span>
+    </p1-header>
+
+    <div class="columns mx-1 is-vcentered is-centered">
+        <div class="column is-one-quarter-desktop is-one-fifth-tablet is-full-mobile"><input id="search-bar" class="input" type="text" placeholder="Insert Name (ie. Bandit)"></div>
+        <div class="column has-text-centered-mobile">
+            <div class="select is-rounded">
+                <select id="search-limit">
+                  <option>Select Result Limit</option>
+                  <option>1</option>
+                  <option>5</option>
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>All</option>
+                </select>
+            </div>
+            <button id="search-button" class="button is-responsive has-text-weight-bold">Search</button>
+        </div>
+        <div class="column is-two-fifths is-hidden-mobile">
+            <div id="result-navigation" class="is-hidden-mobile is-hidden">
+                <nav class="pagination is-centered is-small-touch">
+                    <a id="back-button" class="pagination-previous">Back</a>
+                    <a id="next-button" class="pagination-next">Next</a>
+                    <ul id="result-nav-list" class="pagination-list"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns mx-1">
+        <div class="column is-one-fifth-tablet is-full-mobile has-text-centered-mobile">
+            <div id="filters" class="box is-hidden-mobile">
+                <p id="filter-title" class="title is-size-5 has-text-weight-bold has-text-centered">Filters</p>
+                <div class="select my-2 is-hidden-mobile is-rounded">
+                    <select id="search-type">
+                        <option>Filter by type</option>
+                        <option>Aberration</option>
+                        <option>Beast</option>
+                        <option>Celestial</option>
+                        <option>Construct</option>
+                        <option>Dragon</option>
+                        <option>Elemental</option>
+                        <option>Fey</option>
+                        <option>Fiend</option>
+                        <option>Giant</option>
+                        <option>Humanoid</option>
+                        <option>Monstrosity</option>
+                        <option>Ooze</option>
+                        <option>Plant</option>
+                        <option>Swarm</option>
+                        <option>Undead</option>
+                    </select>
+                </div>
+                <div class="select my-2 is-hidden-mobile is-rounded">
+                    <select id="search-size">
+                      <option>Filter by size</option>
+                      <option>Gargantuan</option>
+                      <option>Huge</option>
+                      <option>Large</option>
+                      <option>Medium</option>
+                      <option>Small</option>
+                      <option>Tiny</option>
+                    </select>
+                </div>
+                <div class="select my-2 is-hidden-mobile is-rounded">
+                    <select id="search-alignment">
+                        <option>Filter by alignment</option>
+                        <option>Lawful Good</option>
+                        <option>Neutral Good</option>
+                        <option>Chaotic Good</option>
+                        <option>Lawful Neutral</option>
+                        <option>True Neutral</option>
+                        <option>Chaotic Neutral</option>
+                        <option>Lawful Evil</option>
+                        <option>Neutral Evil</option>
+                        <option>Chaotic Evil</option>
+                        <option>Unaligned</option>
+                    </select>
+                </div>
+                <div class="select my-2 is-hidden-mobile is-rounded">
+                    <select id="search-order">
+                        <option>Name (A-Z)</option>
+                        <option>Name (Z-A)</option>
+                        <option>Challenge (Low-High)</option>
+                        <option>Challenge (High-Low)</option>
+                    </select>
+                </div>
+            </div>
+            <!--FILTER MOBILE DROPDOWN MENU-->
+            <div id="filters-dropdown" class="dropdown has-text-left-mobile is-hidden-tablet">
+                <div id="dropdown-button-filters" class="dropdown-trigger is-hidden-tablet">
+                    <button class="button">
+                        <span>Filters</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div id="dropdown-menu-filters" class="dropdown-menu is-hidden-tablet" role="menu">
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <div class="select my-2 is-rounded">
+                                <select id="search-type">
+                                    <option>Filter by type</option>
+                                    <option>Aberration</option>
+                                    <option>Beast</option>
+                                    <option>Celestial</option>
+                                    <option>Construct</option>
+                                    <option>Dragon</option>
+                                    <option>Elemental</option>
+                                    <option>Fey</option>
+                                    <option>Fiend</option>
+                                    <option>Giant</option>
+                                    <option>Humanoid</option>
+                                    <option>Monstrosity</option>
+                                    <option>Ooze</option>
+                                    <option>Plant</option>
+                                    <option>Swarm</option>
+                                    <option>Undead</option>
+                                </select>
+                            </div>
+                            <div class="select my-2 is-rounded">
+                                <select id="search-size">
+                                    <option>Filter by size</option>
+                                    <option>Gargantuan</option>
+                                    <option>Huge</option>
+                                    <option>Large</option>
+                                    <option>Medium</option>
+                                    <option>Small</option>
+                                    <option>Tiny</option>
+                                </select>
+                            </div>
+                            <div class="select my-2 is-rounded">
+                                <select id="search-alignment">
+                                    <option>Filter by alignment</option>
+                                    <option>Lawful Good</option>
+                                    <option>Neutral Good</option>
+                                    <option>Chaotic Good</option>
+                                    <option>Lawful Neutral</option>
+                                    <option>True Neutral</option>
+                                    <option>Chaotic Neutral</option>
+                                    <option>Lawful Evil</option>
+                                    <option>Neutral Evil</option>
+                                    <option>Chaotic Evil</option>
+                                    <option>Unaligned</option>
+                                </select>
+                            </div>
+                            <div class="select my-2 is-rounded">
+                                <select id="search-order">
+                                    <option>Name (A-Z)</option>
+                                    <option>Name (Z-A)</option>
+                                    <option>Challenge (Low-High)</option>
+                                    <option>Challenge (High-Low)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END OF FILTERS DROPDOWN-->
+            <div id="recents" class="box is-hidden-mobile">
+                <p class="title is-size-5 has-text-weight-bold has-text-centered">Recents</p>
+                <ul id="recent-list" class="has-text-centered is-hidden-mobile"></ul>
+            </div>
+            <!--RECENTS MOBILE DROPDOWN MENU-->
+            <div id="recents-dropdown" class="dropdown is-hidden-tablet">
+                <div id="dropdown-button-recents" class="dropdown-trigger is-hidden-tablet">
+                    <button class="button">
+                        <span>Recents</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div id="dropdown-menu-recents" class="dropdown-menu is-hidden-tablet" role="menu">
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <ul id="recent-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END OF RECENTS DROPDOWN-->
+        </div>
+        <div class="column is-four-fifths-desktop is-hidden-mobile">
+            <div id="output" class="box is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-center is-align-items-stretch"><i>Waiting to search...</i></div>
+        </div>
+        <!--MOBILE RESULTS-->
+        <div class="column is-hidden-tablet is-full-mobile is-one-third-tablet has-text-centered">
+            <div id="output-mobile" class="">
+                <div class="select">
+                    <select id="mobile-cards">
+                        <option>Waiting for Results</option>
+                    </select>
+                </div>
+            </div>
+            <div id="results-pages" class="is-hidden is-flex is-align-items-center is-justify-content-center my-2">
+                <span class="mx-2">Page Number: </span>
+                <div class="select">
+                    <select id="page-selection">
+                        <option>No Page Selected</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!--END OF MOBILE RESULTS-->
+    </div>
+
+    <div id="full-view" class="mx-3 my-2"></div>
+
+    <p1-footer><span slot="this-page">D&D Monster Guide App</span></p1-footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Monster Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cfc37c984.js" crossorigin="anonymous"></script>
+    <script src="src/documentation.js" type="module"></script>
+</head>
+<body>
+    <p1-navlist data-active="documentation"></p1-navlist>
+
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-hidden-desktop py-1 px-3">
+        <div class="navbar-brand ">
+            <span class="icon my-auto mx-2">
+                <i class="fa-solid fa-dice-d20 fa-xl"></i>
+            </span>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    
+        <div class="navbar-menu py-2" id="nav-links">
+            <div class="navbar-start">
+                <ul>
+                    <li><a class="navbar-item" href="home.html">Home</a></li>
+                    <li><a class="navbar-item" href="app.html">App</a></li>
+                    <li><a class="navbar-item" href="favorites.html">Favorites</a></li>
+                    <li><a class="navbar-item" href="community.html">Community</a></li>
+                    <li><a class="navbar-item">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p1-header>
+        <span slot="page-title">Documentation</span>
+        <span slot="page-description">Information about the project</span>
+    </p1-header>
+
+    <div class="content mx-4 px-2">
+        <h2>Project Requirements</h2>
+        <ul>
+            <li><a href="https://github.com/tonethar/IGME-330-Spring-2022/blob/main/projects/p1-final.md">https://github.com/tonethar/IGME-330-Spring-2022/blob/main/projects/p1-final.md</a></li>
+        </ul>
+
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://dnd.wizards.com/dungeons-and-dragons/what-is-dd/monsters">Home Page Image</a></li>
+            <li><a href="https://fonts.google.com/specimen/Alice?query=alice">Header Font</a></li>
+            <li><a href="https://fontawesome.com/icons/dice-d20?s=solid">Navbar Icon</a></li>
+            <li><a href="https://bulma.io/documentation/">Bulma Documentation</a></li>
+            <li><a href="https://bulma.io/documentation/components/card/">Bulma Card Component</a></li>
+            <li><a href="https://bulma.io/documentation/form/select/">Bulma Select Form</a></li>
+            <li><a href="https://bulma.io/documentation/columns/">Bulma Columns</a></li>
+            <li><a href="https://bulma.io/documentation/components/tabs/">Bulma Tabs Component</a></li>
+            <li><a href="https://bulma.io/documentation/elements/table/">Bulma Table Element</a></li>
+            <li><a href="https://www.w3schools.com/js/js_array_sort.asp">JavaScript Array Sort</a></li>
+            <li><a href="https://bulma.io/documentation/helpers/flexbox-helpers/">Bulma Flexbox</a></li>
+            <li><a href="https://bulma.io/documentation/helpers/visibility-helpers/">Bulma Visibility</a></li>
+            <li><a href="https://bulma.io/documentation/components/pagination/">Bulma Pagination</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView">Scroll Into View</a></li>
+            <li><a href="https://github.com/tonethar/IGME-230-Master/blob/master/notes/web-apps-9.md">Web Storage</a></li>
+        </ul>
+
+        <h2>API</h2>
+        <ul>
+            <li><a href="https://open5e.com/">API: https://open5e.com/</a></li>
+            <li><a href="https://open5e.com/api-docs">API Documentation: https://open5e.com/api-docs</a></li>
+            <li><a href="https://api.open5e.com/monsters/">Endpoint: https://api.open5e.com/monsters/</a></li>
+        </ul>
+
+        <h2>Major Features</h2>
+        <ul>
+            <li>Allows user to search up monsters within the 5th Edition D&D API</li>
+            <li>Favorite monsters so they can be referenced quickly</li>
+            <li>Mobile Friendly<ul>
+                <li>UI changes when on a mobile device</li>
+                <li>App state carries over to mobile UI when user changes size of desktop browser to mobile size (768px)</li>
+            </ul></li>
+            <li>localStorage is utilized to store favorite monsters, recently clicked on monsters, and app state</li>
+            <li>User can filter their search results and change the order of how they appear</li>
+            <li>Searches with more than 20 results are broken up into multiple pages that the player can traverse</li>
+            <li>Code is broken up for ES6 Modules</li>
+            <li>User can unfavorite individual items as well as completely clear their list of favorites</li>
+            <li>Favorites are displayed so the most recent favorited item is first</li>
+            <li>Community page allows players to view the most favorited monsters based on all users</li>
+            <li>Community page cards dynamically change when users favorite/unfavorite cards</li>
+        </ul>
+
+        <h2>Grading</h2>
+        <ul>
+            <li>Project Requirements<ul>
+                <li>Ajax via fetch is utilized on the App page</li>
+                <li>Favoriting system is utilized in App, Favorites, and Community pages and utilizes localStorage</li>
+                <li>Firebase is utilized in App, Favorites, and Community pages</li>
+                <li>Embedded font</li>
+                <li>HTML and CSS is validated for all pages</li>
+                <li>Every page uses at least three web components. One of them being a navigation bar</li>
+                <li>App page has a custom card web component</li>
+                <li>Favorites page has a delete button that clears all of the user's favorites</li>
+                <li>State of App page UI is preserved</li>
+                <li>App page provides user with at least three controls</li>
+            </ul></li>
+            <li>Above and Beyond<ul>
+                <li>User can favorite and unfavorite individual results on App, Favorites, and Commmunity pages</li>
+                <li>User is given more than three controls to utilize</li>
+                <li>App UI changes on mobile browser to look neater on mobile devices</li>
+                <li>A "Full Info" web component was created to allow the user to view more info on a specific monster</li>
+                <li>Recently viewed cards are saved in localStorage so the user can quickly go back to look at them again</li>
+                <li>Community page cards dynamically change when users favorite/unfavorite cards</li>
+            </ul></li>
+        </ul>
+
+        <h2>To Do</h2>
+        <ul>
+            <li>More filters and ways to order results</li>
+            <li>Add more information in "Full Info" web component (ie. resistances, immunities)</li>
+        </ul>
+
+        <img src="images/layout.png" alt="sketch-of-app">
+    </div>
+
+    <p1-footer><span slot="this-page">Documentation</span></p1-footer>
+</body>
+</html>

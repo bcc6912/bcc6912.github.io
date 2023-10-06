@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Monster Guide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4cfc37c984.js" crossorigin="anonymous"></script>
+    <script src="src/community.js" type="module"></script>
+</head>
+<body>
+    <p1-navlist data-active="community"></p1-navlist>
+
+    <!-- Navbar -->
+    <nav class="navbar is-dark is-hidden-desktop py-1 px-3">
+        <div class="navbar-brand ">
+            <span class="icon my-auto mx-2">
+                <i class="fa-solid fa-dice-d20 fa-xl"></i>
+            </span>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    
+        <div class="navbar-menu py-2" id="nav-links">
+            <div class="navbar-start">
+                <ul>
+                    <li><a class="navbar-item" href="home.html">Home</a></li>
+                    <li><a class="navbar-item" href="app.html">App</a></li>
+                    <li><a class="navbar-item" href="favorites.html">Favorites</a></li>
+                    <li><a class="navbar-item">Community</a></li>
+                    <li><a class="navbar-item" href="documentation.html">Documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <p1-header>
+        <span slot="page-title">Community</span>
+        <span slot="page-description">These are the most favorited monsters!</span>
+    </p1-header>
+
+    <button id="refresh-button" class="button mx-3 my-2">Refresh Community Results</button>
+
+    <div id="output" class="box is-flex is-flex-direction-row is-flex-wrap-wrap mx-3">No Community Favorites</div>
+
+    <div id="full-view" class="px-3 my-2"></div>
+
+    <p1-footer><span slot="this-page">Community</span></p1-footer>
+</body>
+</html>

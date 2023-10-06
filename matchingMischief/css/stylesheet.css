@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+    color:#fcf5e3;
+    font-family: "MedievalSharp", cursive;
+    text-align: center;
+    background: url(../images/background.png);
+    text-shadow: 3px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: column;
+    background: #232 url(../images/board.png);
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 -1px 0 #999, 0 1px 0 #999, inset 0 1px 6px #000;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  li {
+    text-align: left;
+    font-size: 175%;
+  }
+
+  #start, #playAgain {
+    background: none;
+    border: none;
+    color:#fcf5e3;
+    font-family: "MedievalSharp", cursive;
+    font-size: 400%;
+    width: 25%;
+    margin: auto;
+    text-shadow: 3px 3px black;
+  }
+
+  #playAgain {
+    background: url(../images/board.png);
+    border-radius: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 -1px 0 #999, 0 1px 0 #999, inset 0 1px 6px #000;
+    margin-top: 1em;
+  }
+
+  #start:hover, #playAgain:hover {
+    color: lightgreen;
+  }
+
+  #game {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: 10vh 50vh;
+    justify-items: center;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  #pBoard, #cBoard {
+    background: #9c9;
+    padding: 5px;
+  
+    background: #232 url(../images/board.png);
+    width: 500px;
+    height: 460px;
+    margin: auto auto;
+  
+    border-radius: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 -1px 0 #999, 0 1px 0 #999, inset 0 1px 6px #000;
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  #pBoard {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #pCards {
+    position: relative;
+    width: 380px;
+    height: 400px;
+  }
+  
+  /* Define the 3D perspective view and dimension of each card. */
+  .card {
+    perspective: 600px;
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    transition: all .3s;
+  }
+  .face {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .3s;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: #999 url(../images/deck.png) 0 -360px;
+  }
+  .back {
+    background: #efefef url(../images/deck.png);
+    transform: rotate3d(0,1,0,-180deg);
+  }
+  
+  .card-flipped .front {
+    transform: rotate3d(0,1,0,180deg);
+  }
+  .card-flipped .back {
+    transform: rotate3d(0,1,0,0deg);
+  }
+  
+  .card-removed {
+    opacity: 0;
+  }
+  
+  /*
+  *** CSS Spritesheets ***
+  Here we define the face graphics of the card deck:
+  R=row & C=column
+  .cardR01C01 would be card #1 in the upper-left corner
+  .cardR04C13 would be card #52 in the bottom-right corner
+  and so on ...
+  
+  We have only defined 24 card faces below - you would need to do the other 28 yourself
+  (The cards are 80x120 in size)
+  */
+  
+  /* Row 1 */
+  .cardR01C01 {background-position:  0 0;}
+  .cardR01C02 {background-position:  -80px 0;}
+  .cardR01C03 {background-position: -160px 0;}
+  .cardR01C04 {background-position: -240px 0;}
+  
+  /* Row 2 */
+  .cardR02C01 {background-position:  0px -120px;}
+  .cardR02C02 {background-position: -80px -120px;}
+  .cardR02C03 {background-position: -160px -120px;}
+  .cardR02C04 {background-position: -240px -120px;}
+  
+  /* Row 3 */
+  .cardR03C01 {background-position:  0 -240px;}
+  .cardR03C02 {background-position:  -80px -240px;}
+  .cardR03C03 {background-position: -160px -240px;}
+  .cardR03C04 {background-position: -240px -240px;}
+
+  #cBoard {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  #cCards {
+    position: relative;
+    width: 380px;
+    height: 400px;
+  }
+
+  #pCards, #cCards {
+    margin: auto;
+  }
+
+  #playerHealth {
+      grid-column: 1;
+      grid-row: 1;
+  }
+
+  #cpuHealth {
+      grid-column: 2;
+      grid-row: 1;
+  }
+
+  h1 {
+    font-size: 400%;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 250%;
+    margin-bottom: 0;
+  }
+
+  #key {
+    display: grid;
+    grid-template-columns: 15vw 20vw;
+    grid-template-rows: 25vh 13vh repeat(3, 20vh);
+    margin: 1em;
+    background-image: url(../images/board.png);
+    border-radius: 10px;
+    border: 1px solid #666;
+    box-shadow: 0 -1px 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), inset 0 1px 6px #000;
+    max-width: 35vw;
+    justify-items: center;
+    align-self: center;
+    margin: 3em auto;
+    margin-top: 1em;
+  }
+
+  #key p {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    font-size: 2vw;
+  }
+
+  #damage, #health, #super {
+    align-items: center;
+    grid-column: 1;
+    padding: 1em;
+  }
+
+  #damage {
+    grid-row: 1;
+  }
+
+  #health {
+    grid-row: 2;
+  }
+
+  #special {
+    grid-row: 3/span 5;
+    
+    display: grid;
+    grid-template-columns: 15vw;
+    grid-template-rows: repeat(3, 20vh);
+
+    align-items: center;
+    justify-items: center;
+  }
+
+  img#matcher, img#sight, img#double {
+    width: 5vw;
+    height: 8vw;
+  }
+
+  img#matcher, p#mtch {
+    grid-row: 3;
+  }
+
+  img#sight, p#sight {
+    grid-row: 4;
+  }
+
+  img#double, p#dbl {
+    grid-row: 5;
+  }
+
+  img.icon {
+    width: 3vw;
+    height: 5vw;
+  }
+
+  img#fireball {
+    transform: rotate(90deg);
+    width: 5vw;
+  }
+
+  @media screen and (max-width: 1600px) {
+    #game {
+      margin-bottom: 7em;
+    }
+
+    #key {
+      grid-template-rows: 25vh 10vh repeat(3, 18vh);
+    }
+
+    #special {
+      grid-template-rows: repeat(3, 20vh);
+    }
+
+    img.icon {
+      width: 2vw;
+      height: 4vw;
+    }
+
+    #health img {
+      width: 2.5vw;
+      height: 4vw;
+    }
+
+    img#matcher, img#sight, img#double {
+      width: 4vw;
+      height: 7vw;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    #start, #playAgain {
+      font-size: 300%;
+    }
+
+    #game {
+      column-gap: 5vw;
+      margin-bottom: 2em;
+    }
+
+    #pBoard, #cBoard {
+      width: 400px;
+      height: 400px;
+    }
+
+    #key {
+      grid-template-rows: 15vh 15vh repeat(3, 15vh);
+    }
+
+    #health img {
+      width: 4vw;
+    }
+
+    #special {
+      grid-template-rows: repeat(3, 15vh);
+    }
+
+    img#matcher, img#sight, img#double {
+      width: 5vw;
+      height: 8vw;
+    }
+  }

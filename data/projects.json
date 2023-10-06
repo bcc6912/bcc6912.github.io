@@ -9,7 +9,8 @@
             "date": "2022-01",
             "link": "https://bcc6912.itch.io/casual-game-dev-project-team-two",
             "linkname": "Game Link",
-            "description": ["Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!", "This was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations."]
+            "description": ["Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber. As the song plays, players must cut through the growing notes at the right time!", "\nThis was a game was made in collaboration with three other students. This Unity project utilizes Wwise, C# scripting, and vector transformations."],
+            "summary": "Amateur Rhythm Game is a casual rhythm game taking inspiration from Osu and Beat Saber."
         },
         {
             "name": "Matching Mischief",
@@ -18,9 +19,10 @@
             "platforms": "Desktop",
             "image": "./media/thumbnailMM.png",
             "date": "2020-11",
-            "link": "https://people.rit.edu/bcc6912/235/project3/",
+            "link": "https://bcc6912.github.io/matchingMischief/game.html",
             "linkname": "Game Link",
-            "description": ["Mathching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!", "This game relies on the use of JavaScript, BrowserDOM and CSS animations."]
+            "description": ["Matching Mischief is a game that focuses on memory. In a high-stakes bet for all the gold in the kingdom, two wizards battle it out the only way they know how: with cards! Cards have varying effects and your goal is to bring your opponent's health to 0! Be careful though! Every time you match a card, your board gets shuffled!", "This game relies on the use of JavaScript, BrowserDOM and CSS animations."],
+            "summary": "Matching Mischief is a game that focuses on memory and relies on the use of JavaScript, BrowserDOM and CSS animations."
         },
         {
             "name": "Forbidden",
@@ -31,7 +33,8 @@
             "date": "2021-09",
             "link": "https://youtu.be/FZp6MLFBqAY",
             "linkname": "Video Postmortem and Demo",
-            "description": ["Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!", "This game was created in Unity and utilizes vector transformations and coroutines."]
+            "description": ["Forbidden is a Match-3 puzzle game. Playing as a mage in the world of Ethshar, you must uncover the omnipotent artifact that is buried deep within the Catacombs. With a powerful, yet mysterious spellbook by your side, cast various spells to defeat those that would stop you from accomplishing your mission!", "This game was created in Unity and utilizes vector transformations and coroutines."],
+            "summary": "Forbidden is a Match-3 puzzle game that was created in Unity and utilizes vector transformations and coroutines."
         },
         {
             "name": "Catacomb Cadaver",
@@ -40,7 +43,8 @@
             "platforms": "Windows",
             "image": "./media/thumbnailCC.png",
             "date": "2020-09",
-            "description": ["Catacomb Cadaver is a luck-based decision-making game. The player chooses different paths to choose from based on their risks and rewards in an attempt to reach the treasure at the end!", "This game was created in Unity and utilizes randomization, JSON parsing, and C# scripting."]
+            "description": ["Catacomb Cadaver is a luck-based decision-making game. The player chooses different paths to choose from based on their risks and rewards in an attempt to reach the treasure at the end!", "This game was created in Unity and utilizes randomization, JSON parsing, and C# scripting."],
+            "summary": "Catacomb Cadaver is a luck-based decision-making game in Unity."
         },
         {
             "name": "Portal 2 Level",
@@ -51,7 +55,9 @@
             "date": "2022-09",
             "link": "./media/Portal2Postmortem.pdf",
             "linkname": "Project Postmortem Documentation",
-            "description": ["This was a Portal 2 level I made for my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of how to teach players new mechanics."]
+            "description": ["This was a Portal 2 level I made for my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of how to teach players new mechanics."],
+            "video": "https://www.youtube.com/embed/ezSZxp632WY",
+            "summary": "This Portal 2 level was designed to show an understanding of how to teach new mechanics."
         },
         {
             "name": "FPS Level",
@@ -63,7 +69,8 @@
             "link": "./media/FPSLevelPostmortem.pdf",
             "linkname": "Project Postmortem Documentation",
             "description": ["This was a Half-Life 2 level I made for my FPS level project in my Level Design 1 class, IGME 420. The main focus of this project was to show an understanding of pacing and flow."],
-            "video": "https://www.youtube.com/embed/9DQITWrTIts"
+            "video": "https://www.youtube.com/embed/9DQITWrTIts",
+            "summary": "This Half-Life 2 level was designed in the Valve Hammer Editor with a focus on pacing and flow."
         },
         {
             "name": "BattleBlock Theater Level",
@@ -74,7 +81,9 @@
             "date": "2022-08",
             "link": "./media/BattleBlockTheaterPostmortem.pdf",
             "linkname": "Project Postmortem Documentation",
-            "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was to have an understanding of how a 2D platformer level is put together."]
+            "description": ["This was a BattleBlockTheater level I made for my Level Design 1 class, IGME 420. The main focus of this project was to have an understanding of how a 2D platformer level is put together."],
+            "video": "https://www.youtube.com/embed/56SGP6zGU-A",
+            "summary": "This BattleBlock Theater level showcases an understanding of 2D platformer design."
         },
         {
             "name": "Genetic Algorithm AI",
@@ -85,7 +94,9 @@
             "date": "2022-11",
             "link": "./media/GeneticAlgorithm.pdf",
             "linkname": "Presentation PDF",
-            "description": ["This was a Genetic Algorithm I developed for my final project in my AI for Game Environments class, IGME 560."]
+            "description": ["This was a Genetic Algorithm I developed for my final project in my AI for Game Environments class, IGME 560."],
+            "video": "https://www.youtube.com/embed/yLVrlxS-OoE",
+            "summary": "This is a Genetic Algorithm developed in my AI for Game Environments class."
         },
         {
             "name": "Mineshafted",
@@ -96,7 +107,21 @@
             "date": "2023-01",
             "link": "https://www.nexusmods.com/newvegas/mods/80735",
             "linkname": "Nexus Page",
-            "description": ["Mineshafted is a mod in Fallout: New Vegas that I developed alongside five other classmates for my Undergraduate Seminar class, IGME 590.03.", "My main focus on this project was creating custom scripts and version control."]
+            "description": ["Mineshafted is a mod in Fallout: New Vegas that I developed alongside five other classmates for my Undergraduate Seminar class, IGME 590.03.", "My main focus on this project was creating custom scripts and version control."],
+            "video": "https://www.youtube.com/embed/oMcDMdeKiu0",
+            "summary": "Mineshafted is a published mod for Fallout: New Vegas."
+        },
+        {
+            "name": "D&D Monster Guide",
+            "created": "Feb. 2022",
+            "engine": "HTML/CSS, JavaScript",
+            "platforms": "Desktop",
+            "image": "./media/thumbnailDND.jpg",
+            "date": "2022-02",
+            "link": "https://bcc6912.github.io/dndMonsterDatabase/home.html",
+            "linkname": "App Home Page",
+            "description": ["The D&D Monster Guide was a website I developed for my Rich Media Web App Development I class, IGME 330. The purpose of this project was to interface with a Web API and store user input into a database for later use."],
+            "summary": "This website was developed for a project focused on working with a Web API and a database."
         }
     ]
 }
